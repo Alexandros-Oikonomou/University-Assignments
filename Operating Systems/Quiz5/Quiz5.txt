@@ -1,0 +1,91 @@
+int isPowerOfTwo(int n) 
+{ 
+  if (n == 0) 
+    return 0; 
+  while (n != 1) 
+  { 
+      if (n%2 != 0) 
+         return 0; 
+      n = n/2; 
+  } 
+  return 1; 
+}
+/* ==================== (i) VECTOR: REALLOC AT EACH UPDATE */
+
+struct Stack {
+  int top;                      /* pointer to the top of the stack */
+  int* array;                   /* stack elements */
+};
+
+struct Stack* createStack() 
+{
+    struct Stack *stack;
+    stack = (struct Stack*) malloc(sizeof(struct Stack));
+    stack->top = -1;
+    stack->array = (int*) malloc( 0 );
+    return stack;
+}
+
+int isEmpty(struct Stack* stack){
+    if(stack->top == -1) return 1;
+    return 0;
+}
+
+void push(struct Stack* stack, int item){
+    stack->array = (int*) realloc(stack->array, ( stack->top + 2) * sizeof(int) );
+    stack->top++;
+    stack->array[ stack->top ] = item;
+}
+
+int pop(struct Stack* stack){
+    if(isEmpty( stack )) exit(1);
+    int result = stack->array[ stack->top ];
+    stack->array = (int*) realloc(stack->array, stack->top * sizeof(int));
+    stack->top--;
+    return result;
+}
+
+
+/* ==================== (ii) VECTOR: REALLOC AT POWERS OF 2 */
+
+struct StackFast {
+  int top;                      /* pointer to the top of the stack */
+  int* array;                   /* stack elements */
+};
+
+struct StackFast* createStackFast() 
+{ 
+    struct StackFast *stack;
+    stack = (struct StackFast*) malloc(sizeof(struct StackFast));
+    stack->top = -1;
+    stack->array = (int*) malloc( 0 );
+    return stack;
+}
+
+int isEmptyFast(struct StackFast* stack){
+    if(stack->top == -1) return 1;
+    return 0;
+}
+
+void pushFast(struct StackFast* stack, int item){
+    int power = isPowerOfTwo( stack->top +1 );
+    if( power ){
+        stack->array = (int*) realloc(stack->array, ( stack->top + 1) * 2 * sizeof(int) );
+    }
+    stack->top++;
+    stack->array[ stack->top ] = item;
+}
+
+int popFast(struct StackFast* stack){
+    if(isEmptyFast( stack )) exit(1);
+    int power = isPowerOfTwo( stack->top );
+    int result = stack->array[ stack->top ];
+    stack->top--;
+    if( power ){
+        stack->array = (int*) realloc(stack->array, ( stack->top + 1 ) * sizeof(int));
+    }
+        
+    
+    return result;
+}
+

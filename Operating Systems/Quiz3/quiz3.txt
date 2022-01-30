@@ -1,0 +1,44 @@
+int execvpWithTimeout(int timeout, char **cmd){
+
+    int pid,
+        pid_time,
+        status,
+        no_status;
+
+    pid_time = fork();
+    
+    if(pid_time<0) {
+
+        exit(-2);
+
+    }else if(pid_time == 0){
+
+            sleep(timeout);
+            exit(2);
+        
+            
+    }else{
+
+        pid = fork();
+        if(pid<0) {
+
+            exit(-2);
+
+        }else if(pid == 0){
+            execvp(*cmd,cmd);
+            perror(*cmd);
+            exit(1);
+        }
+        
+        int return_pid = wait(&status);
+        
+        kill(pid, SIGKILL);
+        kill(pid_time, SIGKILL);
+
+        wait(&no_status);
+
+        if(return_pid == pid && WEXITSTATUS(status) != 0) return 1;
+        return WEXITSTATUS(status);
+    }
+
+}

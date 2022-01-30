@@ -1,0 +1,36 @@
+function status = pageFaults(pageReq, nFrame)
+% PAGEFAULTS - Compute number of page faults for LRU
+%   
+% STATUS = PAGEFAULTS( PAGERREQ, NFRAME ) simulates a Least
+% Recenlty Used page reference policy with NFRAME number of
+% frames. At each time step, the funciton is called with the next
+% page request in PAGEREQ. The function returns either 'M' or 'H'
+% if it was a miss or a hit, respectively. The function stores an
+% internal state, using persistent variables, to store previously
+% stored pages. At the beginning, consider every frame empty.
+ 
+    persistent frames = zeros( nFrame, 1);
+    persistent times = zeros( nFrame, 1);
+    
+    % <YOUR CODE HERE>
+    
+    inMem = 0;
+    for i = 1:nFrame,               % search for hit
+        if ( frames(i) == pageReq ),
+            inMem = 1;
+            times(i) = time;
+            break;
+        end;
+    end;
+    
+    if( inMem == 1),
+        status = 'H';
+        return;
+    end;
+    status = 'M';
+    
+    [M,I] = min(times);
+    times(I) = time;
+    frames(I) = pageReq;
+        
+end

@@ -1,0 +1,112 @@
+function curProc = sjf(arrival, flagPreempt)
+ 
+  %% DECLARE PERSISTENT VALUES
+  persistent waitingProcesses ;
+  persistent waitingProcessesTime ;
+  
+  persistent currentProcess ;
+  persistent currentProcessTimeRem ;
+  
+  persistent pausedProcesses ;
+  persistent pausedProcessesTimeRem ;
+  
+  %% INITIALIZATION
+  if isempty(waitingProcesses)
+      waitingProcesses = {};
+  end
+  
+  if isempty(waitingProcessesTime)
+      waitingProcessesTime = [];
+  end
+  
+  if isempty(currentProcess)
+      currentProcess = {};
+  end
+  
+  if isempty(currentProcessTimeRem)
+      currentProcessTimeRem = [];
+  end
+  
+  if isempty(pausedProcesses)
+      pausedProcesses = {};
+  end
+  
+  if isempty(pausedProcessesTimeRem)
+      pausedProcessesTimeRem = [];
+  end
+ 
+  
+  %% PARSE INPUT
+  if isempty(arrival)  
+      'do nothing';
+  else
+      waitingProcesses{length(waitingProcesses)+1} = arrival;
+      waitingProcessesTime(length(waitingProcessesTime)+1) = arrival{2};
+  end
+  
+  
+   
+  %% DECIDE RPOCESS VALUE
+  
+  if flagPreempt == false
+  if isempty(currentProcess)
+      if ~isempty(waitingProcesses) 
+          min = waitingProcesses{1}; min = min{2}; 
+          minindex = 1;
+          for i=2:length(waitingProcesses)
+              temp = waitingProcesses{i}; temp = temp{2};
+              if temp<min
+                  min = temp;
+                  minindex = i;
+              end
+          end
+          currentProcess = waitingProcesses{minindex};
+          waitingProcesses(minindex) = [];
+          currentProcessTimeRem = currentProcess{2}-1;
+          currentProcess{2} = currentProcessTimeRem;
+          
+          curProc = currentProcess{1};
+          return;
+          
+      else 
+          curProc = '_';
+          return;
+      end
+  else
+      if currentProcessTimeRem == 0; 
+          if ~isempty(waitingProcesses) 
+          min = waitingProcesses{1}; min = min{2}; 
+          minindex = 1;
+          for i=2:length(waitingProcesses)
+              temp = waitingProcesses{i}; temp = temp{2};
+              if temp<min
+                  min = temp;
+                  minindex = i;
+              end
+          end
+          currentProcess = waitingProcesses{minindex};
+          waitingProcesses(minindex) = [];
+          currentProcessTimeRem = currentProcess{2}-1;
+          currentProcess{2} = currentProcessTimeRem;
+          
+          curProc = currentProcess{1};
+          return;
+          
+          else 
+          curProc = '_';
+          return;
+          end
+      else
+          curProc = currentProcess{1};
+          currentProcessTimeRem = currentProcessTimeRem-1;
+          return;
+      end
+  end
+  
+  end
+  
+  
+  
+    
+    
+end
