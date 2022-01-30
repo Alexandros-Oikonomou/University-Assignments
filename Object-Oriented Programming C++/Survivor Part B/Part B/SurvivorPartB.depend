@@ -1,0 +1,259 @@
+# depslib dependency file v1.0
+1492452876 source:c:\users\angry laptop\desktop\survivorpartb\main.cpp
+	"Player.h"
+	"Team.h"
+	"FoodAward.h"
+	"ImmunityAward.h"
+	"CommunicationAward.h"
+	"TeamCompetition.h"
+	"QuizCompetition.h"
+	"ImmunityCompetition.h"
+
+1492335405 c:\users\angry laptop\desktop\survivorpartb\player.h
+	<iostream>
+	<string>
+	<cstdio>
+	<cstdlib>
+
+1492454485 c:\users\angry laptop\desktop\survivorpartb\team.h
+	<iostream>
+	<string>
+	"Player.h"
+
+1492369151 source:c:\users\angry laptop\desktop\survivorpartb\player.cpp
+	"Player.h"
+
+1492375618 source:c:\users\angry laptop\desktop\survivorpartb\team.cpp
+	"Team.h"
+	"Player.h"
+
+1492448355 source:c:\users\angry laptop\desktop\survivorpartb\communicationaward.cpp
+	"CommunicationAward.h"
+
+1492454409 c:\users\angry laptop\desktop\survivorpartb\communicationaward.h
+	"Award.h"
+
+1492454413 c:\users\angry laptop\desktop\survivorpartb\award.h
+	<string>
+	<iostream>
+
+1492454173 c:\users\angry laptop\desktop\survivorpartb\foodaward.h
+	"Award.h"
+	<cstdlib>
+
+1492454451 c:\users\angry laptop\desktop\survivorpartb\immunityaward.h
+	"Award.h"
+
+1492453850 source:c:\users\angry laptop\desktop\survivorpartb\immunitycompetition.cpp
+	"ImmunityCompetition.h"
+
+1492452900 c:\users\angry laptop\desktop\survivorpartb\immunitycompetition.h
+	"Competition.h"
+
+1492448561 c:\users\angry laptop\desktop\survivorpartb\competition.h
+	<string>
+	<iostream>
+	"Round.h"
+	"Player.h"
+	"Team.h"
+	"CommunicationAward.h"
+	"FoodAward.h"
+	"ImmunityAward.h"
+
+1492452692 c:\users\angry laptop\desktop\survivorpartb\teamcompetition.h
+	"Competition.h"
+
+1492454381 c:\users\angry laptop\desktop\survivorpartb\quizcompetition.h
+	"Competition.h"
+
+1492451801 source:c:\users\angry laptop\desktop\survivorpartb\quizcompetition.cpp
+	"QuizCompetition.h"
+
+1492452914 source:c:\users\angry laptop\desktop\survivorpartb\teamcompetition.cpp
+	"TeamCompetition.h"
+
+1492374990 c:\users\angry laptop\desktop\survivorpartb\communicationaward.cpp
+	"CommunicationAward.h"
+
+1492448202 c:\users\angry laptop\desktop\survivorpartb\round.h
+	<iostream>
+	<string>
+
+1492448355 source:c:\users\papad\desktop\survivorpartb\communicationaward.cpp
+	"CommunicationAward.h"
+
+1492454409 c:\users\papad\desktop\survivorpartb\communicationaward.h
+	"Award.h"
+
+1492454413 c:\users\papad\desktop\survivorpartb\award.h
+	<string>
+	<iostream>
+
+1494510881 source:c:\users\papad\desktop\survivorpartb\immunitycompetition.cpp
+	"Competition.h"
+	"ImmunityCompetition.h"
+	"ImmunityAward.h"
+	"TeamCompetition.h"
+	"Team.h"
+	"Player.h"
+
+1494510972 source:c:\users\papad\desktop\survivorpartb\main.cpp
+	"Team.h"
+	"Player.h"
+	"Competition.h"
+	"TeamCompetition.h"
+	"QuizCompetition.h"
+	"ImmunityCompetition.h"
+	"FoodAward.h"
+	"ImmunityAward.h"
+	"Award.h"
+
+1494510766 c:\users\papad\desktop\survivorpartb\team.h
+	<iostream>
+	<string>
+	"Player.h"
+
+1494510770 c:\users\papad\desktop\survivorpartb\player.h
+	<iostream>
+	<string>
+	<cstdio>
+	<cstdlib>
+
+1492369151 source:c:\users\papad\desktop\survivorpartb\player.cpp
+	"Player.h"
+
+1492455466 source:c:\users\papad\desktop\survivorpartb\quizcompetition.cpp
+
+1492375618 source:c:\users\papad\desktop\survivorpartb\team.cpp
+	"Team.h"
+	"Player.h"
+
+1492455468 source:c:\users\papad\desktop\survivorpartb\teamcompetition.cpp
+
+1494081045 c:\users\papad\desktop\survivorpartb\competition.h
+	<iostream>
+
+1494514344 c:\users\papad\desktop\survivorpartb\immunitycompetition.h
+	"Competition.h"
+	"ImmunityAward.h"
+	"Team.h"
+
+1492454451 c:\users\papad\desktop\survivorpartb\immunityaward.h
+	"Award.h"
+
+1494505016 c:\users\papad\desktop\survivorpartb\teamcompetition.h
+	"Competition.h"
+	"FoodAward.h"
+	"Round.h"
+	"Team.h"
+
+1492454173 c:\users\papad\desktop\survivorpartb\foodaward.h
+	"Award.h"
+	<cstdlib>
+
+1492448202 c:\users\papad\desktop\survivorpartb\round.h
+	<iostream>
+	<string>
+
+1494517115 c:\users\papad\desktop\survivorpartb\quizcompetition.h
+	"Competition.h"
+	"Round.h"
+	"Team.h"
+	"CommunicationAward.h"
+
+1492444754 source:c:\users\alex\desktop\survivorpartb\communicationaward.cpp
+	"CommunicationAward.h"
+
+1492450808 c:\users\alex\desktop\survivorpartb\communicationaward.h
+	"Award.h"
+
+1492450812 c:\users\alex\desktop\survivorpartb\award.h
+	<string>
+	<iostream>
+
+1494764740 source:c:\users\alex\desktop\survivorpartb\main.cpp
+	"Team.h"
+	"Player.h"
+	"Competition.h"
+	"TeamCompetition.h"
+	"QuizCompetition.h"
+	"ImmunityCompetition.h"
+	"FoodAward.h"
+	"ImmunityAward.h"
+	"Award.h"
+
+1494507166 c:\users\alex\desktop\survivorpartb\team.h
+	<iostream>
+	<string>
+	"Player.h"
+
+1494507170 c:\users\alex\desktop\survivorpartb\player.h
+	<iostream>
+	<string>
+	<cstdio>
+	<cstdlib>
+
+1494764858 c:\users\alex\desktop\survivorpartb\competition.h
+	<iostream>
+
+1494765140 c:\users\alex\desktop\survivorpartb\teamcompetition.h
+	"Competition.h"
+	"FoodAward.h"
+	"Round.h"
+	"Team.h"
+
+1492450572 c:\users\alex\desktop\survivorpartb\foodaward.h
+	"Award.h"
+	<cstdlib>
+
+1492444602 c:\users\alex\desktop\survivorpartb\round.h
+	<iostream>
+	<string>
+
+1494765140 c:\users\alex\desktop\survivorpartb\quizcompetition.h
+	"Competition.h"
+	"Round.h"
+	"Team.h"
+	"CommunicationAward.h"
+
+1494765140 c:\users\alex\desktop\survivorpartb\immunitycompetition.h
+	"Competition.h"
+	"ImmunityAward.h"
+	"Team.h"
+
+1492450850 c:\users\alex\desktop\survivorpartb\immunityaward.h
+	"Award.h"
+
+1494598142 source:c:\users\alex\desktop\survivorpartb\player.cpp
+	"Player.h"
+
+1492372018 source:c:\users\alex\desktop\survivorpartb\team.cpp
+	"Team.h"
+	"Player.h"
+
+1494765140 source:c:\users\alex\desktop\survivorpartb\immunitycompetition.cpp
+	"Competition.h"
+	"ImmunityCompetition.h"
+	"ImmunityAward.h"
+	"TeamCompetition.h"
+	"Team.h"
+	"Player.h"
+
+1494765893 source:c:\users\alex\desktop\survivorpartb\quizcompetition.cpp
+	"TeamCompetition.h"
+	"FoodAward.h"
+	"Round.h"
+	"Competition.h"
+	"Team.h"
+	"Player.h"
+	"QuizCompetition.h"
+	<cmath>
+
+1494765548 source:c:\users\alex\desktop\survivorpartb\teamcompetition.cpp
+	"TeamCompetition.h"
+	"FoodAward.h"
+	"Round.h"
+	"Competition.h"
+	"Team.h"
+	"Player.h"
+

@@ -1,0 +1,23 @@
+# depslib dependency file v1.0
+1491921353 source:c:\users\angry laptop\desktop\test\survivor\main.cpp
+	"Player.h"
+	"Team.h"
+
+1491920444 source:c:\users\angry laptop\desktop\test\survivor\player.cpp
+	"Player.h"
+
+1491919715 source:c:\users\angry laptop\desktop\test\survivor\team.cpp
+	"Team.h"
+	"Player.h"
+
+1491919140 c:\users\angry laptop\desktop\test\survivor\team.h
+	<iostream>
+	<string>
+	"Player.h"
+
+1491920313 c:\users\angry laptop\desktop\test\survivor\player.h
+	<iostream>
+	<string>
+	<cstdio>
+	<cstdlib>
+
