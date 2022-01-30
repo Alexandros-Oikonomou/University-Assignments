@@ -1,0 +1,56 @@
+
+**** 05/14/18 12:03:30 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-exe2"  [ C:\Cadence\Projects\exe2-PSpiceFiles\SCHEMATIC1\exe2.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "exe2.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\Alexandros\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.DC LIN RVAL 1k 10k 1k 
+--------$
+ERROR(ORPSIM-16063): Must be 'I' or 'V'
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source EXE2
+V_V1         VIN 0 DC 0Vdc AC 1Vac 
+C_C1         VIN N00109  1u  TC=0,0 
+R_R1         0 N00109  100k TC=0,0 
+J_J1         N00374 N00109 N00194 BF245A 
+R_R2         0 N00194  33k TC=0,0 
+C_C2         0 N00194  10u  TC=0,0 
+R_R3         N00374 N00871  2.2k TC=0,0 
+Q_Q1         N00566 N00443 N00374 BC238BP/ZTX 
+R_R4         0 N00443  {RVAL} TC=0,0 
+C_C3         0 N00443  10u  TC=0,0 
+C_C4         N00443 N00566  1.5n  TC=0,0 
+R_R5         N00443 N00871  100k TC=0,0 
+R_R6         N00871 N00566  5.6k TC=0,0 
+C_C5         N00566 VOUT  1u  TC=0,0 
+R_R7         0 VOUT  5.6k TC=0,0 
+V_V2         N00871 M_UN0001 15Vdc
+.PARAM  rval=1k
+
+**** RESUMING exe2.cir ****
+.END
+

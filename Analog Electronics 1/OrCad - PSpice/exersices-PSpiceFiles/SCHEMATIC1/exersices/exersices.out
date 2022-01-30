@@ -1,0 +1,144 @@
+
+**** 05/13/18 13:28:23 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-exersices"  [ C:\Cadence\Projects\exersices-PSpiceFiles\SCHEMATIC1\exersices.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "exersices.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\Alexandros\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.TRAN  0 1000ns 0 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source EXERSICES
+R_R1         N01447 N01203  10k TC=0,0 
+R_R2         0 N01203  2.2k TC=0,0 
+R_R3         0 N01203  10k TC=0,0 
+Q_Q1         N013141 N01203 N01322 BC238BP/ZTX 
+R_R4         N01608 N01322  15k TC=0,0 
+Q_Q2         N01322 N01534 N013832 BC238BP/ZTX 
+R_R5         N013141 N01447  10k TC=0,0 
+R_R6         N013832 N01447  10k TC=0,0 
+R_R7         N01534 N01447  10k TC=0,0 
+R_R8         0 N01534  1k TC=0,0 
+V_V1         N01447 N01608 15Vdc
+
+**** RESUMING exersices.cir ****
+.END
+
+**** 05/13/18 13:28:23 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-exersices"  [ C:\Cadence\Projects\exersices-PSpiceFiles\SCHEMATIC1\exersices.sim ] 
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               BC238BP/ZTX     
+               NPN             
+       LEVEL    1            
+          IS   18.000000E-15 
+          BF  400            
+          NF     .9955       
+         VAF   80            
+         IKF     .14         
+         ISE   50.000000E-15 
+          NE    1.46         
+          BR   35.5          
+          NR    1.005        
+         VAR   12.5          
+         IKR     .03         
+         ISC  172.000000E-15 
+          NC    1.27         
+         ISS    0            
+          RB     .56         
+          RE     .6          
+          RC     .25         
+         CJE   13.000000E-12 
+         VJE     .75         
+         CJC    4.000000E-12 
+         VJC     .54         
+         MJC     .33         
+        XCJC    1            
+         CJS    0            
+         VJS     .75         
+          TF  640.000000E-12 
+          TR   50.720000E-09 
+          KF    0            
+          AF    1            
+          CN    2.42         
+           D     .87         
+
+
+**** 05/13/18 13:28:23 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-exersices"  [ C:\Cadence\Projects\exersices-PSpiceFiles\SCHEMATIC1\exersices.sim ] 
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N01203)-907.7E-06 (N01322)    -.6642 (N01447)    1.7651 (N01534) 503.3E-06     
+
+(N01608)  -13.2350 (N013141)    -.6653                   (N013832)    -.6542    
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -8.380E-04
+
+    TOTAL POWER DISSIPATION   1.26E-02  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 05/13/18 13:28:23 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-exersices"  [ C:\Cadence\Projects\exersices-PSpiceFiles\SCHEMATIC1\exersices.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .03
+

@@ -1,0 +1,18 @@
+* source EXE2
+V_V1         VIN 0 DC 0Vdc AC 1Vac 
+C_C1         VIN N00109  1u  TC=0,0 
+R_R1         0 N00109  100k TC=0,0 
+J_J1         N00374 N00109 N00194 BF245A 
+R_R2         0 N00194  33k TC=0,0 
+C_C2         0 N00194  10u  TC=0,0 
+R_R3         N00374 N00871  2.2k TC=0,0 
+Q_Q1         N00566 N00443 N00374 BC238BP/ZTX 
+R_R4         0 N00443  {RVAL} TC=0,0 
+C_C3         0 N00443  10u  TC=0,0 
+C_C4         N00443 N00566  1.5n  TC=0,0 
+R_R5         N00443 N00871  100k TC=0,0 
+R_R6         N00871 N00566  5.6k TC=0,0 
+C_C5         N00566 VOUT  1u  TC=0,0 
+R_R7         0 VOUT  5.6k TC=0,0 
+V_V2         N00871 M_UN0001 15Vdc
+.PARAM  rval=1k
