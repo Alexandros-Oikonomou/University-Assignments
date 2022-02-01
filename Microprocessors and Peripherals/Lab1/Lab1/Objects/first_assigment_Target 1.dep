@@ -1,0 +1,23 @@
+Dependencies for Project 'first_assigment', Target 'Target 1': (DO NOT MODIFY !)
+CompilerVersion: 5060960::V5.06 update 7 (build 960)::.\ARMCC
+F (.\main.c)(0x60893941)(--c99 -c --cpu Cortex-M4.fp.sp -D__EVAL -g -O0 --apcs=interwork --split_sections-I.\RTE\_Target_1-I"C:\Users\Αλέξανδρος Πετρίδης\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include"-I"C:\Users\Αλέξανδρος Πετρίδης\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include"-D__UVISION_VERSION="533" -D_RTE_ -DSTM32F401xE -D_RTE_-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5E8E8312)
+F (C:\Users\Αλέξανδρος Πετρίδης\AppData\Local\Arm\Packs\Keil\ARM_Compiler\1.6.3\Source\retarget_io.c)(0x584E7E1E)(--c99 -c --cpu Cortex-M4.fp.sp -D__EVAL -g -O0 --apcs=interwork --split_sections-I.\RTE\_Target_1-I"C:\Users\Αλέξανδρος Πετρίδης\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include"-I"C:\Users\Αλέξανδρος Πετρίδης\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include"-D__UVISION_VERSION="533" -D_RTE_ -DSTM32F401xE -D_RTE_-o .\objects\retarget_io.o --omf_browse .\objects\retarget_io.crf --depend .\objects\retarget_io.d)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5E8E8312)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E8312)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5E8E8312)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5E8E8312)
+I (C:\Keil_v5\ARM\ARMCC\include\assert.h)(0x5E8E8312)
+I (C:\Keil_v5\ARM\ARMCC\include\rt_sys.h)(0x5E8E8312)
+I (.\RTE\_Target_1\RTE_Components.h)(0x6081DAFF)
+F (RTE\Device\STM32F401RETx\startup_stm32f401xe.s)(0x5F6B2636)(--cpu Cortex-M4.fp.sp --pd "__EVAL SETA 1" -g --apcs=interwork -I.\RTE\_Target_1-I"C:\Users\Αλέξανδρος Πετρίδης\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include"-I"C:\Users\Αλέξανδρος Πετρίδης\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include"--pd "__UVISION_VERSION SETA 533" --pd "_RTE_ SETA 1" --pd "STM32F401xE SETA 1" --pd "_RTE_ SETA 1"--list .\listings\startup_stm32f401xe.lst --xref -o .\objects\startup_stm32f401xe.o --depend .\objects\startup_stm32f401xe.d)
+F (RTE\Device\STM32F401RETx\system_stm32f4xx.c)(0x5F6B2636)(--c99 -c --cpu Cortex-M4.fp.sp -D__EVAL -g -O0 --apcs=interwork --split_sections-I.\RTE\_Target_1-I"C:\Users\Αλέξανδρος Πετρίδης\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include"-I"C:\Users\Αλέξανδρος Πετρίδης\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include"-D__UVISION_VERSION="533" -D_RTE_ -DSTM32F401xE -D_RTE_-o .\objects\system_stm32f4xx.o --omf_browse .\objects\system_stm32f4xx.crf --depend .\objects\system_stm32f4xx.d)
+I (C:\Users\Ξ‘Ξ»Ξ­ΞΎΞ±Ξ½Ξ΄ΟΞΏΟ‚ Ξ ΞµΟ„ΟΞ―Ξ΄Ξ·Ο‚\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h)(0x00000000)
+I (C:\Users\Ξ‘Ξ»Ξ­ΞΎΞ±Ξ½Ξ΄ΟΞΏΟ‚ Ξ ΞµΟ„ΟΞ―Ξ΄Ξ·Ο‚\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f401xe.h)(0x00000000)
+I (C:\Users\Ξ‘Ξ»Ξ­ΞΎΞ±Ξ½Ξ΄ΟΞΏΟ‚ Ξ ΞµΟ„ΟΞ―Ξ΄Ξ·Ο‚\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm4.h)(0x00000000)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E8312)
+I (C:\Users\Ξ‘Ξ»Ξ­ΞΎΞ±Ξ½Ξ΄ΟΞΏΟ‚ Ξ ΞµΟ„ΟΞ―Ξ΄Ξ·Ο‚\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_version.h)(0x00000000)
+I (C:\Users\Ξ‘Ξ»Ξ­ΞΎΞ±Ξ½Ξ΄ΟΞΏΟ‚ Ξ ΞµΟ„ΟΞ―Ξ΄Ξ·Ο‚\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_compiler.h)(0x00000000)
+I (C:\Users\Ξ‘Ξ»Ξ­ΞΎΞ±Ξ½Ξ΄ΟΞΏΟ‚ Ξ ΞµΟ„ΟΞ―Ξ΄Ξ·Ο‚\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_armcc.h)(0x00000000)
+I (C:\Users\Ξ‘Ξ»Ξ­ΞΎΞ±Ξ½Ξ΄ΟΞΏΟ‚ Ξ ΞµΟ„ΟΞ―Ξ΄Ξ·Ο‚\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\mpu_armv7.h)(0x00000000)
+I (C:\Users\Ξ‘Ξ»Ξ­ΞΎΞ±Ξ½Ξ΄ΟΞΏΟ‚ Ξ ΞµΟ„ΟΞ―Ξ΄Ξ·Ο‚\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x00000000)
