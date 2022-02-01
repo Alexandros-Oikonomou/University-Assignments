@@ -1,1 +1,1 @@
-# Network Communication via UDP ß TCP with University Server ithaki.eng.auth.gr
+# Network Communication via UDP-TCP with University Server ithaki.eng.auth.gr
