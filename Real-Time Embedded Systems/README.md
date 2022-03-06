@@ -1,1 +1,1 @@
-Detecting Bluetooth devices nearby and checking close contacts for covid
+# Detecting Bluetooth devices nearby and checking close contacts for covid
